@@ -4,6 +4,9 @@
 //see http://docs.opencv.org/modules/imgproc/doc/geometric_transformations.html
 //for more details about the functions
 
+#include <opencv2/core/types_c.h>
+#include "opencv2/imgproc/imgproc_c.h"
+
 namespace aslamcv_helper {
 
 using namespace cv;
