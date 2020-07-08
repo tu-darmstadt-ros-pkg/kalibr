@@ -253,7 +253,7 @@ BOOST_PYTHON_MODULE(libnumpy_eigen)
 {
 	using namespace boost::python;
 	// Without this import, the converter will segfault
-	import_array();
+	_import_array();
 
 	import_1_1_int();
 	import_1_1_float();
