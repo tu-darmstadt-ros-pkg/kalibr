@@ -8,6 +8,13 @@
 
 namespace sm { namespace python {
 
+    #if PY_MAJOR_VERSION >= 3
+        #define PyInt_AsLong(x) PyLong_AsLong(x)
+        #define PyInt_AsUnsignedLongLongMask(x) PyLong_AsUnsignedLongLongMask(x)
+        #define PyInt_Check(x) PyLong_Check(x)
+        #define PyInt_FromLong(x) PyLong_FromLong(x)
+    #endif  
+
         // to use:     sm::python::Id_python_converter<FrameId>::register_converter();
 
 
