@@ -5,7 +5,7 @@ find_package(catkin REQUIRED COMPONENTS sm_common)
 find_package(Boost REQUIRED COMPONENTS system serialization thread)
 
 catkin_package(
-  INCLUDE_DIRS include ${catkin_INCLUDE_DIRS}
+  INCLUDE_DIRS include
   LIBRARIES sm_boost
   CATKIN_DEPENDS sm_common
   DEPENDS

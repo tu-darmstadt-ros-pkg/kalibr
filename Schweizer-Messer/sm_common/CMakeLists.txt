@@ -10,7 +10,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++0x -D__STRICT_ANSI__")
 include_directories(include ${Boost_INCLUDE_DIRS})
 
 catkin_package(
-  INCLUDE_DIRS include ${catkin_INCLUDE_DIRS}
+  INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS 
   DEPENDS
