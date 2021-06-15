@@ -140,6 +140,9 @@ class BagImageDatasetReader(object):
     elif data.encoding == "rgb8":
       img_data = np.array(self.CVB.imgmsg_to_cv2(data))
       img_data = cv2.cvtColor(img_data, cv2.COLOR_RGB2GRAY)
+    elif data.encoding == "rgba8":
+      img_data = np.array(self.CVB.imgmsg_to_cv2(data))
+      img_data = cv2.cvtColor(img_data, cv2.COLOR_RGBA2GRAY)
     elif data.encoding == "8UC4" or data.encoding == "bgra8":
       img_data = np.array(self.CVB.imgmsg_to_cv2(data))
       img_data = cv2.cvtColor(img_data, cv2.COLOR_BGRA2GRAY)
