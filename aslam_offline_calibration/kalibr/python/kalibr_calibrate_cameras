@@ -185,8 +185,8 @@ def main():
             if not cam.initGeometryFromObservations(observations):
                 raise RuntimeError("Could not initialize the intrinsics for camera with topic: {0}. Try to use --verbose and check whether the calibration target extraction is successful.".format(topic))
 
-            cam.geometry.projection().setParameters(np.array([1.9323175, 1784.65430765, 1785.19038132,   959.78665638,   535.99413535]))
-            cam.geometry.projection().distortion().setParameters(np.array([-0.25631402,  0.38845987, -0.0000178,  -0.00090089]))
+            cam.geometry.projection().setParameters(np.array([1.805372163705555, 1700.3920044017027, 1699.979249034659, 956.6345108073069, 538.2270981584785]))
+            cam.geometry.projection().distortion().setParameters(np.array([-0.262635029022342, 0.20277036280385644, -0.0006801543709025448, 0.0010824643743689848]))
 
             print "\tProjection initialized to: %s" % cam.geometry.projection().getParameters().flatten()
             print "\tDistortion initialized to: %s" % cam.geometry.projection().distortion().getParameters().flatten()
